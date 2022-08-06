@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Main from './components/Main/main';
+import Button from './components/button/button';
+import logo from './image/logo.jfif';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <img src={logo} alt="Company Logo" />
+      <p>Please rate your satisfication on the following attributes of our service.</p>
+      <div>
+        <h3>Responsiveness</h3>
+        <Main />
+        <h3>Competency in advising right solutions</h3>
+        <Main />
+        <h3>Trustworthiness</h3>
+        <Main />
+        <h3> Customer service and support</h3>
+        <Main />
+        <Button />
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
